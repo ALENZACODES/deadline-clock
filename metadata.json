@@ -1,0 +1,6 @@
+{
+  "name": "Deadline Clock",
+  "description": "Student deadline converter and live countdown for hackathons, contests, and applications across time zones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
