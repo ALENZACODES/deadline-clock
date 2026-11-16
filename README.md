@@ -44,3 +44,28 @@ No API key or `.env` file is needed.
 ---
 
 © 2026 John K. All rights reserved.
+
+## Project structure
+
+```text
+deadline-clock/
+├── .github/
+│   └── workflows/     # CI workflows (1 file)
+├── public/            # Favicon
+│   └── favicon.svg
+├── src/               # Application source
+│   ├── components/    # UI components (3 files)
+│   ├── types/         # Type definitions (1 file)
+│   ├── utils/         # Calendar export and time zone helpers (2 files)
+│   ├── App.tsx        # Main view
+│   ├── index.css
+│   └── main.tsx       # Entry point
+├── .gitignore
+├── index.html         # Vite entry page
+├── metadata.json
+├── package-lock.json
+├── package.json       # npm scripts and dependencies
+├── README.md          # This file
+├── tsconfig.json      # TypeScript settings
+└── vite.config.ts     # Vite build settings
+```
