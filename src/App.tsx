@@ -42,7 +42,7 @@ export default function App() {
     }
   });
 
-  // Deadlines list — strictly empty until user adds one (Standing rule: Never add pre-filled fake deadlines)
+  // Starts empty: no sample deadlines, only the ones the user adds.
   const [deadlines, setDeadlines] = useState<Deadline[]>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -448,7 +448,7 @@ export default function App() {
             ))}
           </div>
         ) : deadlines.length === 0 ? (
-          /* Empty State — Starting state per prompt requirement */
+          /* Empty state shown before the first deadline is added */
           <div className="p-8 sm:p-12 text-center rounded-2xl border border-slate-800 bg-slate-900/40 my-4 space-y-4">
             <div className="w-14 h-14 mx-auto rounded-2xl bg-slate-800/80 flex items-center justify-center text-sky-400">
               <CalendarDays className="w-7 h-7" aria-hidden="true" />
